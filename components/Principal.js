@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from "@emotion/styled";
-import axios from "axios";
 
 const Mensajes = styled.div`
     h2{
@@ -50,20 +49,6 @@ const Mensajes = styled.div`
 
 
 const Principal = () => {
-
-    const [datos, setDatos] = useState({});
-    
-    const consultarAPI = async () => {
-        try {
-            const url = `http://localhost:4000/usuario`;
-            const resultado = await axios.get(url);
-            setDatos(resultado);   
-        }catch (error) {
-            console.log(error);
-        }
-    }
-
-    consultarAPI();
 
     return ( 
         <div className="contenedor">

@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import ChatState from "../context/chat/chatState";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return ( 
+    <ChatState>
+      <Component {...pageProps}/>
+    </ChatState>   
+  );
 }
-
-export default MyApp
+ 
+export default MyApp;

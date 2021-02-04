@@ -1,7 +1,7 @@
 module.exports = {
   env: {
       backendURL: "http://localhost:4000",
-      frontendURL: "http://localhost:30002TQVTYSD"
+      frontendURL: "http://localhost:3000"
   },
   async headers() {
       return [
@@ -18,3 +18,6 @@ module.exports = {
       ]
     }
 }
+
+
+//Access-Control-Allow-Origin
